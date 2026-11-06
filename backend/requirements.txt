@@ -1,20 +1,22 @@
-# Web framework & validation
-fastapi>=0.110.0
-uvicorn[standard]>=0.28.0
-pydantic>=2.6.0
-pydantic-settings>=2.2.0
+
+# Web framework and validation
+fastapi==0.162.0
+uvicorn[standard]==0.54.0
+pydantic==2.14.3
+pydantic-settings==2.16.2
 python-multipart>=0.0.9
 
-# Database & ORM
-SQLAlchemy>=2.0.28
-alembic>=1.13.1
-psycopg2-binary>=2.9.9
+# Database and ORM
+SQLAlchemy==2.1.8
+alembic==1.20.1
+psycopg2-binary==2.9.13
 
-# Computer Vision & Media Inspection
-opencv-python-headless>=4.9.0.80
-numpy>=1.26.0
+# Computer vision and detection
+opencv-python==5.0.0.93
+numpy==2.2.6
+ultralytics==8.4.203
 
-# Testing & Utilities
-pytest>=8.1.0
-httpx>=0.27.0
-python-dotenv>=1.0.1
+# Testing and utilities
+pytest==9.2.0
+httpx==0.28.1
+python-dotenv==1.2.4
