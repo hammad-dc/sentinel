@@ -52,14 +52,18 @@ conda create -n sentinel python=3.11
 conda activate sentinel
 ```
 
-### 4. Install Dependencies
+### 4. Install Dependencies and environment 
+You need anaconda for this too
 
 ```bash
-pip install -r backend/requirements.txt
+conda env create -f environment.yml
+conda activate sentinel
 ```
 
 Install a compatible PyTorch build for your hardware. For NVIDIA GPU acceleration, follow the official [PyTorch installation guide](https://pytorch.org/get-started/locally/).
+i used this one: python -m pip install torch==2.15.0+cu132 torchvision==0.29.2+cu132 --index-url https://download.pytorch.org/whl/cu132
 
+## skip from this part
 ### 5. Configure Environment Variables
 
 Create a `.env` file using `.env.example` as a template.
